@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyMvp</string>
+    <string name="home">首页</string>
+    <string name="found">发现</string>
+    <string name="problem">常见问题</string>
+    <string name="my_visa">我的签证</string>
+</resources>
