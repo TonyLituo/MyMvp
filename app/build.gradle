@@ -34,9 +34,18 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
     //Okhttp
     compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    //Gson
+    compile 'com.google.code.gson:gson:2.8.0'
+    //retrofit2
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
     //日志拦截器
     compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
     //recyclerview
     compile 'jp.wasabeef:recyclerview-animators:2.2.3'
+//EventBus
+    compile 'org.greenrobot:eventbus:3.0.0'
+//Picasso
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
 }

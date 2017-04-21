@@ -1,8 +1,6 @@
 package com.dhcc.mvp.ui.base;
 
 
-import com.dhcc.mvp.model.bean.Bean;
-
 /**
  * Created by Lituo on 2017/4/7 0007. 13:40 .
  * Mail：tony1994_vip@163.com
@@ -12,7 +10,7 @@ import com.dhcc.mvp.model.bean.Bean;
  * ####无特殊要求可直接使用，有特殊要求的继承即可
  */
 
-public interface IBaseNetView<T extends Bean> extends IBaseView {
+public interface IBaseNetView extends IBaseView {
     /**
      * 显示加载进度条
      */
@@ -23,10 +21,7 @@ public interface IBaseNetView<T extends Bean> extends IBaseView {
      */
     void hidePrgbar();
 
-    /**
-     * 加载成功
-     */
-    void succeed(T t);
+
 
     /**
      * 网络连接失败

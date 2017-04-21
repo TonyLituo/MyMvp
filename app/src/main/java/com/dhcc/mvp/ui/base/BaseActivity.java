@@ -18,7 +18,7 @@ import butterknife.Unbinder;
  * Activity的基类
  */
 
-public abstract class BaseActivity<V extends IBaseView, P extends MvpPresenter<V>> extends MvpActivity<V, P> {
+public abstract class BaseActivity<V extends IBaseView, P extends MvpPresenter<V>> extends MvpActivity<V, P> implements IBaseView{
 
     protected ActivityUtils mActivityUtils;
 

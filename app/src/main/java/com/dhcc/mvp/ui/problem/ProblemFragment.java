@@ -2,7 +2,7 @@ package com.dhcc.mvp.ui.problem;
 
 
 import com.dhcc.mvp.R;
-import com.dhcc.mvp.persenter.ProblemPresenter;
+import com.dhcc.mvp.presenter.ProblemPresenter;
 import com.dhcc.mvp.ui.base.BaseFragment;
 
 /**

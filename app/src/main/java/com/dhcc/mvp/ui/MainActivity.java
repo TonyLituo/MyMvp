@@ -11,7 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import com.dhcc.mvp.R;
-import com.dhcc.mvp.persenter.MainPersenter;
+import com.dhcc.mvp.presenter.MainPresenter;
 import com.dhcc.mvp.ui.base.BaseActivity;
 import com.dhcc.mvp.ui.base.BaseFragment;
 import com.dhcc.mvp.ui.found.FoundFragment;
@@ -25,7 +25,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.OnClick;
 
-public class MainActivity extends BaseActivity<IMainView, MainPersenter> implements IMainView {
+public class MainActivity extends BaseActivity<IMainView, MainPresenter> implements IMainView {
 
     @BindView(R.id.toolbar)
     Toolbar mToolbar;
@@ -64,8 +64,8 @@ public class MainActivity extends BaseActivity<IMainView, MainPersenter> impleme
 
     @NonNull
     @Override
-    public MainPersenter createPresenter() {
-        return new MainPersenter();
+    public MainPresenter createPresenter() {
+        return new MainPresenter();
     }
 
     @Override
@@ -128,8 +128,6 @@ public class MainActivity extends BaseActivity<IMainView, MainPersenter> impleme
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 // TODO: 2017/4/6 0006  交易完刷新页面
-
-
                 switch (checkedId) {
                     case R.id.rbtn_home://主页
                         mViewpagerMain.setCurrentItem(0,false);
@@ -158,7 +156,6 @@ public class MainActivity extends BaseActivity<IMainView, MainPersenter> impleme
                         } else {
                             //// TODO: 2017/4/7 0007 显示未登录页面
                         }
-
                         mActivityUtils.showToast("待实现，替换为我的签证  页面");
                         break;
                     default:

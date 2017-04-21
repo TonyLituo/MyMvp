@@ -2,7 +2,7 @@ package com.dhcc.mvp.ui.mine;
 
 
 import com.dhcc.mvp.R;
-import com.dhcc.mvp.persenter.MinePresenter;
+import com.dhcc.mvp.presenter.MinePresenter;
 import com.dhcc.mvp.ui.base.BaseFragment;
 
 /**

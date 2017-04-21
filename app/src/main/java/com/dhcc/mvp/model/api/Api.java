@@ -6,11 +6,12 @@ package com.dhcc.mvp.model.api;
  */
 
 public interface Api {
-    String NEWS_HOST = "http://c.3g.163.com/";
+
+    String NEWS_HOST = "http://c.3g.163.com";
+    String NEWS_BEAUTY = "http://c.3g.163.com/recommend/getChanListNews?channel=T1456112189138&size=20&offset=0";
     String WELFARE_HOST = "http://gank.io/";
 /**
- * http://c.3g.163.com/recommend/getChanListNews
- * ?channel=T1456112189138&size=20&offset=120
+ * http://c.3g.163.com/recommend/getChanListNews?channel=T1456112189138&size=20&offset=120
  *
  * http://c.3g.163.com/recommend/getChanListNews
  * ?channel=T1456112189138&size=20&offset=0
